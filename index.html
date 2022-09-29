@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="bodyID">
+    <form id="formID">
+        <div style="text-align: center;">
+            <h2>Калькулятор стоимости авто</h2>
+        </div>
+
+        <div class="listDiv">
+            <span>Марка:</span>
+            <select name="marka" id="markaID">
+                <option value="0" selected="selected"></option>
+                <option value="5" name="Acura">Acura</option>
+                <option value="10" name="Audi">Audi</option>
+                <option value="15" name="BMW">BMW</option>
+                <option value="5" name="Citroen">Citroen</option>
+                <option value="10" name="Honda">Honda</option>
+                <option value="5" name="Kia">Kia</option>
+            </select>
+        </div>
+
+        <div class="listDiv">
+            <span>Модель:</span>
+            <select name="model" id="modelID">
+                <option value="0" selected="selected"></option>
+            </select>
+        </div>
+
+        <div class="listDiv">
+            <span>Год выпуска:</span>
+            <select name="year" id="yearID">
+                <option value="0" selected="selected"></option>
+                <option value="1">2012</option>
+                <option value="2">2013</option>
+                <option value="3">2014</option>
+                <option value="4">2015</option>
+                <option value="5">2016</option>
+                <option value="6">2017</option>
+                <option value="7">2018</option>
+                <option value="8">2019</option>
+                <option value="9">2020</option>
+                <option value="10">2021</option>
+                <option value="11">2022</option>
+            </select>
+        </div>
+
+        <div class="listDiv">
+            <span>Тип кузова</span>
+            <fieldset class="bodySet">
+                <input type="radio" id="sedanID" name="body" value="1"><span>Седан</span>
+                <input type="radio" id="hbID" name="body" value="2"><span>Хэтчбэк</span>
+                <input type="radio" id="crossID" name="body" value="3"><span>Кроссовер</span>
+                <input type="radio" id="miniID" name="body" value="3"><span>Минивэн</span>
+            </fieldset>
+        </div>
+
+        <div class="listDiv">
+            <span>Пробег:</span>
+            <input type="text" placeholder="Пробег, км" id="distanceID">
+        </div>
+
+        <div class="div_buttons">
+            <input type ="button" value="Рассчитать" class="ibutton" id="calcButton">
+            </input>
+        </div>
+        <div class="result">
+            <span>Стоимость: </span>
+            <span id="result"></span>
+        </div>
+    </form>
+    <script src="./scripts.js"></script>  
+
+</body>
+
+</html>
